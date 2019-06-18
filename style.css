@@ -1,0 +1,51 @@
+*{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.top{
+    background-color: grey;
+    border: 1px solid darkgrey;
+}
+
+#middle{
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+}
+.phone{
+    background-color: lightpink;
+}
+
+.tablet{
+    background-color: lightblue;
+
+}
+.desktop{
+    background-color: lightgreen;
+}
+
+@media screen and (max-width:600px){
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:601px) and (max-width: 1023px){
+    .phone {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .phone {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
